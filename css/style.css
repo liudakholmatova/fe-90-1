@@ -4,13 +4,13 @@
 :root {
 
 }
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: Montserrat, Roboto;
+    font-family: Montserrat, Roboto, sans-serif;
     font-size: 14px;
     font-weight: 400;
+    background-image: url(https://www.pexels.com/uk-ua/photo/galaxy-2644734/);
 }
 p,
 h1,
