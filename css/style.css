@@ -4,8 +4,11 @@
 :root {
 
 }
+
+
+
 body {
-    font-family: Roboto;
+    font-family: Montserrat, Roboto;
     font-size: 14px;
     font-weight: 400;
 }
