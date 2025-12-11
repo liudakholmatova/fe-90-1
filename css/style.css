@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+ :root {
+    --main-font: Roboto, sans-serif;
+        --secondary-font: Raleway, sans-serif;
+/*text color*/
+    --accent-cl: #555555;
+    --main-txt-cl: #1E1E1E;
+    --secondary-txt-cl: ;
+        /*bacground colors*/
+            --accent-cl: #FF6C00;
+            --main-bg-cl: #F5F4FA;
+            --secondary-bg-cl: #191c26;
+} 
+body {
+    font-family: Montserrat, Roboto, sans-serif;
+}
+
+
+p,
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/* ХЕДЕР */ 
+.header {
+margin: 0;
+    padding: 0;
+    min-height: 100vh;
+     background-image: url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ .header-container {
+    height: 100svh;
+    padding-top: 30px;
+display: flex;
+    flex-direction: column;
+    gap: 40px;
+} 
+
+ .logo {
+        font-family: Alex Brush, cursive;
+            font-size: 50px;
+            font-weight: 700;
+            color: #c0bebef9;
+} 
+.nav {
+    flex: 1;
+    /* займає всю доступну висоту контейнера */
+} 
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.nav-item {
+    position: relative;
+    padding-bottom: 6px;
+}
+.nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 2px;
+    background: rgba(147, 141, 183, 0.4);
+    opacity: 0.6;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+.nav-item a {
+ font-family: Amatic SC;   
+    font-size: 30px;
+font-weight: 400;
+color: #f8f7f7f9;
+transition: 0.3s;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+    color: coral;
+}
+.btn {
+     font-family: Amatic SC;
+        font-size: 30px;
+        padding: 12px 20px;
+            max-width: 200px;
+            min-width: 160px;
+            min-height: 40px;
+            margin-bottom: 30px;
+}
+.btn-mode-light {
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    background: #ffffffcc;
+    /* напівпрозорий білий */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    /* модний "скляний" ефект */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-mode-light:hover {
+    background: #ffffffee;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+/* active */
+.btn-mode-light:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* СЕКЦІЯ ГЕРОЙ*/
+.hero-container {
+    background-color: rgb(2, 2, 69);
+    margin: 0;
+    padding: 0;
+width: 100%;
+    min-height: 100vh;
+}
+.hero-title {
+   text-align: center;
+    font-family: Alex Brush, cursive;
+        font-size: 50px;
+        font-weight: 700;
+        color: #c0bebef9;
+}
+.about-list {
+    display: flex;
+    gap: 20px;
+}
+.about-item {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    color: #f8f7f7f9;
+    padding: 50px;
+    font-family: Amatic SC;
+    font-size: 20px;
+} 
+/* СЕКЦІЯ ПОСЛУГИ */
+
+.services {
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+}
+
+.services-list {
+    display: flex;
+    gap: 20px;
+}
+
