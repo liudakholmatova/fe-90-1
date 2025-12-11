@@ -2,28 +2,36 @@
     box-sizing: border-box;
 }
 :root {
-
+    --main-font: Roboto, sans-serif;
+        --secondary-font: Raleway, sans-serif;
+/*text color*/
+    --accent-cl: #555555;
+    --main-txt-cl: #1E1E1E;
+    --secondary-txt-cl: ;
+        /*bacground colors*/
+            --accent-cl: #FF6C00;
+            --main-bg-cl: #F5F4FA;
+            --secondary-bg-cl: #191c26;
 }
 body {
     font-family: Montserrat, Roboto, sans-serif;
-  
-    position: relative;
+    margin: 0;
+        /* прибираємо стандартні відступи */
+        padding: 0;
+        min-height: 100vh;
+        background-image: url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg");
+        background-size: cover;
+        /* фото займає весь простір */
+        background-position: center;
+        /* центр по горизонталі і вертикалі */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* фото фіксоване при скролі */
+        font-family: 'Arial', sans-serif;
+        /* для прикладу */
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.9;
-    z-index: -1;
-}
+
 p,
 h1,
 h2,
@@ -60,10 +68,28 @@ ul {
 }
 /* ХЕДЕР */ 
 .header-container {
-    height: 500px;
+    position: relative;
+    height: 100svh;
     display: flex;
     flex-direction: column;
 }
+
+/* .header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+} */
+
+
 .logo {
         font-family: Alex Brush, cursive;
             font-size: 50px;
@@ -86,9 +112,32 @@ flex-direction: column;
 justify-content: space-between;
 margin-bottom: 10px;
 }
+.nav-list a:hover,
+.nav-list a:focus {
+    color: coral;
+}
 .btn {
     font-family: Amatic SC;
         font-size: 30px;
         font-weight: 500;
         color: #fddfdff9;
 }
+
+/* СЕКЦІЯ ГЕРОЙ*/
+
+.about-list {
+    display: flex;
+    gap: 20px;
+}
+.about-item {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    color: #f8f7f7f9;
+    padding: 50px;
+    font-family: Amatic SC, cursive;
+    font-size: 20px;
+} 
+
+
+
