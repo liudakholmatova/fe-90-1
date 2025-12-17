@@ -52,6 +52,15 @@ ul {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.title {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-family: Alex Brush, cursive;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c0bebef9;
+}
 /* ХЕДЕР */ 
 .header {
 margin: 0;
@@ -150,20 +159,10 @@ transition: 0.3s;
 /* СЕКЦІЯ ГЕРОЙ*/
 .hero-container {
     background-color: rgb(2, 2, 69);
-    /* margin: 0;
-    padding: 0; */
 width: 100%;
     min-height: 100vh;
 }
-.hero-title {
-   padding-top: 70px;
-   padding-bottom: 70px;
-   text-align: center;
-    font-family: Alex Brush, cursive;
-        font-size: 50px;
-        font-weight: 700;
-        color: #c0bebef9;
-}
+
 .about-list {
     display: flex;
     gap: 20px;
@@ -176,17 +175,15 @@ width: 100%;
     padding: 50px;
     font-family: Amatic SC;
     font-size: 20px;
-    box-shadow: 1px 2px 4px rgba(147, 141, 183, 0.4), 0px 1px 1px rgba(147, 141, 183, 0.4);,
+    box-shadow: 1px 2px 4px rgba(147, 141, 183, 0.4), 0px 1px 1px rgba(147, 141, 183, 0.4),
             0px 2px 1px rgba(255, 255, 255, 0.6);
 } 
-.about-item
 /* СЕКЦІЯ ПОСЛУГИ */
-
 .services {
-    padding: 80px 20px;
-    background-color: #f7f7f7;
+    background-color: rgb(2, 2, 69);
+    width: 100%;
+    min-height: 100vh;
 }
-
 .services-list {
     display: flex;
     gap: 20px;
