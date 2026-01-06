@@ -212,12 +212,24 @@ font-family: Amatic SC;
 }
 
 .services-list {
-     display: grid;
+     /* display: grid;
          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
         gap: 10px;
-       padding-left: 10px;
+       padding-left: 10px; */
+       display: flex;
+}
+.services-item {
+    margin-right: 30px;
+    background-color: #ffffffcc;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.services-item :last-child {
+    margin-right: 0;
 }
 .services-img {
+    margin: 0 auto;
+    padding-top: 20px;
     width: 100%;
     max-width: 250px;
     height: 400px;
@@ -230,7 +242,16 @@ font-family: Amatic SC;
     transform: scale(1.05);
         filter: brightness(1.05);
 }
-.column-container {
-   
+.services-text {
+    padding: 40px;
+    font-family: Amatic SC;
+        font-size: 16px;
+            line-height: 1.17;
+color: #333;
+}
+.service-name {
+    color: #333;
+    font-family: Amatic SC;
+        font-size: 20px;
 }
 
