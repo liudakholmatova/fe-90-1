@@ -217,6 +217,7 @@ font-family: Amatic SC;
         gap: 10px;
        padding-left: 10px; */
        display: flex;
+       padding-bottom: 50px;
 }
 .services-item {
     margin-right: 30px;
@@ -254,4 +255,14 @@ color: #333;
     font-family: Amatic SC;
         font-size: 20px;
 }
-
+/* FOOTER */
+.footer-socials {
+background-color: rgb(2, 2, 69);
+}
+.address {
+    /* font-family: Amatic SC;
+        font-size: 16px;
+        line-height: 1.17;
+        color: #f8f7f7f9; */
+        font-style: normal;
+}
