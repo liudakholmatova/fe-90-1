@@ -259,10 +259,68 @@ color: #333;
 .footer-socials {
 background-color: rgb(2, 2, 69);
 }
+.footer-container {
+display: flex;
+    align-items: baseline;
+    height: 250px;
+}
+      
 .address {
-    /* font-family: Amatic SC;
-        font-size: 16px;
-        line-height: 1.17;
-        color: #f8f7f7f9; */
         font-style: normal;
+}
+.footer-list {
+    margin-bottom: 12px;
+    /* вертикальні відступи */
+    font-family: 'Amatic SC';
+    font-size: 16px;
+    line-height: 1.17;
+}
+.footer-list a {
+    color: #FFFFFF99;
+    display: inline-block;
+}
+.footer-list a:hover {
+    text-decoration: underline;
+}
+.ellipse-title {
+font-family: Amatic SC;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2; 
+ color: #FFFFFF99;
+    margin-bottom: 20px;
+     margin-left: 200px; 
+ 
+}
+.ellipse-list {
+    display: flex;
+    margin-left: 200px;
+}
+.ellipse-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #757575;
+    border-radius: 50%;
+}
+.ellipse-item {
+    margin-right: 10px;
+
+}
+
+.ellipse-item:last-child {
+    margin-right: 0;
+}
+.ellipse-icons {
+    fill: #333;
+}
+ .ellipse-link:hover .socials-icons,
+.ellipse-link:focus .socials-icons {
+    fill: #ffffffcc;
+} 
+.ellipse-link:hover,
+.ellipse-link:focus {
+    background: #FFFFFF99;
 }
