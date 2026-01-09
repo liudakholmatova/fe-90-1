@@ -255,6 +255,12 @@ color: #333;
     font-family: Amatic SC;
         font-size: 20px;
 }
+/* КОНТАКТНА ФОРМА */
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
 /* FOOTER */
 .footer-socials {
 background-color: rgb(2, 2, 69);
@@ -264,7 +270,15 @@ display: flex;
     align-items: baseline;
     height: 250px;
 }
-      
+  .footer-title {
+    font-family: Amatic SC cursive;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #FFFFFF99;
+        display: block;
+       margin-bottom: 20px;
+  }
 .address {
         font-style: normal;
 }
