@@ -124,15 +124,33 @@
           <h2>Онлайн запись</h2>
           <form class="contacts-form" name="contacts-form">
             <label class="form-group">
-              <span class="form-label">ім'я</span>
-              <input type="text" id="user-name" name="user-name" />
+              <span class="form-label">ім'я*</span>
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Олександра"
+              />
             </label>
             <label class="form-group">
-              <span class="form-label">телефон</span>
-              <input type="text" id="user-phone" name="user-phone" />
+              <span class="form-label">телефон*</span>
+              <input
+                class="form-input"
+                type="text"
+                id="user-phone"
+                name="user-phone"
+                placeholder="+38 097 123 45 67"
+              />
             </label>
 
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea
+              class="form-message"
+              name="user-message"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
             <button type="submit">Відправити</button>
           </form>
         </div>

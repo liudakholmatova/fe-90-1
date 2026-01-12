@@ -259,11 +259,12 @@ color: #333;
 .contacts-form {
     display: flex;
     flex-direction: column;
-    flex-basis: 300px;
+    width: 300px;
 }
 /* FOOTER */
 .footer-socials {
 background-color: rgb(2, 2, 69);
+padding: 20px;
 }
 .footer-container {
 display: flex;
