@@ -256,11 +256,40 @@ color: #333;
         font-size: 20px;
 }
 /* КОНТАКТНА ФОРМА */
+
+.contacts {
+background-color: #757575;
+}
 .contacts-form {
     display: flex;
     flex-direction: column;
     width: 300px;
 }
+.contacts-left-side {
+    width: 560px;
+}
+.form-wrapper {
+    display: flex;
+    align-items: center;
+}
+.form-wrapper .form-group.item:not(:last-child) {
+    margin-right: 30px;
+}
+.form-label {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333;
+}
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+
 /* FOOTER */
 .footer-socials {
 background-color: rgb(2, 2, 69);
