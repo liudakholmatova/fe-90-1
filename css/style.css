@@ -258,22 +258,26 @@ color: #333;
 /* КОНТАКТНА ФОРМА */
 
 .contacts {
-background-color: #757575;
+background-color: #0f0236;
 }
 .contacts-form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    /* width: 300px; */
 }
 .contacts-left-side {
-    width: 560px;
+    width: 570px;
 }
 .form-wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 44px;
 }
-.form-wrapper .form-group.item:not(:last-child) {
+.form-wrapper .form-group:not(:last-child) {
     margin-right: 30px;
+}
+.form-group {
+    display: block;
 }
 .form-label {
     font-weight: 600;
@@ -281,12 +285,42 @@ background-color: #757575;
     line-height: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #333;
+    color: #FFFFFF99;
 }
 .form-input {
+width: 270px;
+outline: transparent;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+color: #fff;
+transition: border-color 400ms ease;
+}
+.form-input::placeholder {
+    opacity: 0;
+}
+.form-input:focus {
+   border-bottom: 1px solid #fff;
+}
+.form-message {
+    width: 100%;
+    outline: transparent;
+        background-color: transparent;
+        border: none;
+            border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+            resize: none;
+            color: #fff;
+            transition: border-color 400ms ease;
+}
+.form-message::placeholder {
+    opacity: 0;
+}
+.form-message:focus {
+    border-bottom: 1px solid #fff;
+}
+.contacts-form>.form-group {
+    width: 100%;
+    margin-bottom: 44px;
 }
 
 
