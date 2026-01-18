@@ -269,6 +269,7 @@ background-color: #0f0236;
     width: 570px;
 }
 .form-wrapper {
+   
     display: flex;
     align-items: center;
     margin-bottom: 44px;
@@ -276,16 +277,24 @@ background-color: #0f0236;
 .form-wrapper .form-group:not(:last-child) {
     margin-right: 30px;
 }
-.form-group {
-    display: block;
+
+.form-wrapper>.form-group {
+    position: relative;
+    padding-top: 20px;
 }
 .form-label {
+    display: block;
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF99;
+}
+.form-wrapper> .form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .form-input {
 width: 270px;
