@@ -278,7 +278,7 @@ background-color: #0f0236;
     margin-right: 30px;
 }
 
-.form-wrapper>.form-group {
+.form-wrapper .form-group {
     position: relative;
     padding-top: 20px;
 }
@@ -291,11 +291,14 @@ background-color: #0f0236;
     text-transform: uppercase;
     color: #FFFFFF99;
 }
-.form-wrapper> .form-label {
+.form-wrapper .form-label {
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateY(20);
+   transition: 400ms ease;
 }
+
 .form-input {
 width: 270px;
 outline: transparent;
