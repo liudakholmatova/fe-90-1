@@ -283,6 +283,9 @@ background-color: #0f0236;
     padding-top: 20px;
 }
 .form-label {
+      position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     font-weight: 600;
     font-size: 11px;
@@ -290,15 +293,13 @@ background-color: #0f0236;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF99;
-}
-.form-wrapper .form-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(20);
+      transform: translateY(20px);
    transition: 400ms ease;
 }
-
+.form-input:focus+.form-label {
+    color: #fff;
+    transform: translateY(0);
+}
 .form-input {
 width: 270px;
 outline: transparent;
@@ -330,11 +331,16 @@ transition: border-color 400ms ease;
 .form-message:focus {
     border-bottom: 1px solid #fff;
 }
-.contacts-form>.form-group {
+.form-message-group {
+    position: relative;
+   padding-top: 20px;
     width: 100%;
     margin-bottom: 44px;
 }
-
+.form-message:focus+.form-label {
+      color: #fff;
+    transform: translateY(0);
+}
 
 /* FOOTER */
 .footer-socials {
