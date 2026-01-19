@@ -296,12 +296,14 @@ background-color: #0f0236;
       transform: translateY(20px);
    transition: 400ms ease;
 }
-.form-input:focus+.form-label {
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
     color: #fff;
     transform: translateY(0);
 }
 .form-input {
 width: 270px;
+padding: 5px;
 outline: transparent;
     background-color: transparent;
     border: none;
@@ -311,6 +313,10 @@ transition: border-color 400ms ease;
 }
 .form-input::placeholder {
     opacity: 0;
+}
+.form-input:focus::placeholder {
+    opacity: 1;
+    transition: opacity 400ms ease;
 }
 .form-input:focus {
    border-bottom: 1px solid #fff;
@@ -325,8 +331,13 @@ transition: border-color 400ms ease;
             color: #fff;
             transition: border-color 400ms ease;
 }
+
 .form-message::placeholder {
     opacity: 0;
+}
+.form-message:focus::placeholder {
+    opacity: 1;
+   transition: opacity 400ms ease;
 }
 .form-message:focus {
     border-bottom: 1px solid #fff;
@@ -337,7 +348,8 @@ transition: border-color 400ms ease;
     width: 100%;
     margin-bottom: 44px;
 }
-.form-message:focus+.form-label {
+.form-message:focus+.form-label,
+.form-message:not(:placeholder-shown)+.form-label {
       color: #fff;
     transform: translateY(0);
 }
