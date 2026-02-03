@@ -13,6 +13,9 @@
             --main-bg-cl: #F5F4FA;
             --secondary-bg-cl: #191c26;
 } 
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Montserrat, Roboto, sans-serif;
 }
