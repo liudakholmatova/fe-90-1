@@ -362,7 +362,7 @@ transition: border-color 400ms ease;
 .prices-container {
     background-color: rgb(2, 2, 69);
     width: 100%;
-     min-height: 100vh; 
+     min-height: 50vh; 
 }
 
 /* FOOTER */
