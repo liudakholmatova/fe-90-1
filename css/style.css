@@ -357,6 +357,14 @@ transition: border-color 400ms ease;
     transform: translateY(0);
 }
 
+/* ЦІНИ */
+
+.prices-container {
+    background-color: rgb(2, 2, 69);
+    width: 100%;
+     min-height: 100vh; 
+}
+
 /* FOOTER */
 .footer-socials {
 background-color: rgb(2, 2, 69);
