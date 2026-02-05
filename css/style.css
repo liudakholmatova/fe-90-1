@@ -257,7 +257,8 @@ color: #333;
 /* ЦІНИ */
 
 .prices-container {
-    background-color: rgb(2, 2, 69);
+    background-image: url("https://pixnio.com/free-images/2021/03/30/2021-03-30-10-32-00-576x384.jpg");
+    /* background-color: rgb(2, 2, 69); */
     width: 100%;
     /* min-height: 50vh; */
 }
@@ -270,7 +271,7 @@ color: #333;
 }
 .prices-list {
    /* background-color: #ffffffcc; */
-   background-image: url("https://pixnio.com/free-images/2021/03/30/2021-03-30-10-32-00-576x384.jpg");
+ 
    /* opacity: 0.4; */
    padding: 20px; 
    margin-bottom: 50px;
