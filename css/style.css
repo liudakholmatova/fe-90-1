@@ -215,10 +215,6 @@ font-family: Amatic SC;
 }
 
 .services-list {
-     /* display: grid;
-         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-        gap: 10px;
-       padding-left: 10px; */
        display: flex;
        padding-bottom: 50px;
 }
@@ -258,6 +254,138 @@ color: #333;
     font-family: Amatic SC;
         font-size: 20px;
 }
+/* ЦІНИ */
+
+.prices-container {
+    background-color: rgb(2, 2, 69);
+    width: 100%;
+    /* min-height: 50vh; */
+}
+.content-prices {
+    display: flex;
+    gap: 30px;
+}
+.prices-column {
+    flex: 1;
+}
+.prices-list {
+   /* background-color: #ffffffcc; */
+   background-image: url("https://pixnio.com/free-images/2021/03/30/2021-03-30-10-32-00-576x384.jpg");
+   /* opacity: 0.4; */
+   padding: 20px; 
+   margin-bottom: 50px;
+   border-radius: 8px;
+    box-shadow: 1px 2px 4px rgba(147, 141, 183, 0.4), 0px 1px 1px rgba(147, 141, 183, 0.4),
+            0px 2px 1px rgba(255, 255, 255, 0.6);
+}
+.prices-text {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #ffffffcc;
+}
+.prices-left-span {
+    display: flex;
+         align-items: center; 
+        flex: 1;
+}
+.prices-left-span::after {
+    content: "";
+        flex: 1;
+        border-bottom: 1px dotted #000;
+        margin: 0 10px;
+}
+.prices-span {
+    white-space: nowrap;
+}
+/* .price-item {
+    display: flex;
+    align-items: center;
+}
+.prices-left-span {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.prices-left-span::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px dotted #000;
+    margin: 0 10px;
+}
+.prices-span {
+    white-space: nowrap;
+} */
+/* .content-prices {
+    display: flex;
+    gap: 30px;
+}
+.prices-column {
+    flex: 1;
+    background: #ffffffcc;;
+    padding: 20px;
+    border-radius: 12px;
+}
+.prices-list {
+    list-style: none;
+        margin: 0;
+        padding: 0;
+} */
+/* .prices-text {
+    display: flex;
+        align-items: center;
+        margin: 10px 0;
+}
+.prices-text::after {
+    content: "";
+        flex: 1;
+        border-bottom: 1px dotted #000;
+        margin: 0 10px;
+}
+.prices-left-span {
+
+}
+.prices-span {
+    white-space: nowrap;
+} */
+
+
+
+
+
+/* .prices-list {
+    display: grid;
+    background-color: #ddd;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px 40px;
+        /* рядки / колонки */
+        /* list-style: none;
+        padding: 0;
+        margin: 0;
+}
+.prices-text {
+    display: flex;
+        align-items: center;
+}
+.prices-text::after {
+    content: "";
+        flex: 1;
+        border-bottom: 1px dotted #000;
+        margin: 0 10px;
+}
+.prices-span {
+    white-space: nowrap;
+}  */
+
+
+
+
+
+
+
+
+
+
 /* КОНТАКТНА ФОРМА */
 
 .contacts {
@@ -357,13 +485,7 @@ transition: border-color 400ms ease;
     transform: translateY(0);
 }
 
-/* ЦІНИ */
 
-.prices-container {
-    background-color: rgb(2, 2, 69);
-    width: 100%;
-     min-height: 50vh; 
-}
 
 /* FOOTER */
 .footer-socials {
