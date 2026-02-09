@@ -328,10 +328,14 @@ font-family: Amatic SC;
     white-space: nowrap;
 }
 
-/* КОНТАКТНА ФОРМА */
+/* КОНТАКТНА ФОРМА    FOOTER   */
 
 .contacts {
-background-color: #0f0236;
+background-color: #07001f;
+}
+.contacts-container {
+    display: flex;
+    align-items: baseline;
 }
 .contacts-form {
     display: flex;
@@ -430,14 +434,18 @@ transition: border-color 400ms ease;
 
 
 /* FOOTER */
-.footer-socials {
+/* .footer-socials {
 background-color: rgb(2, 2, 69);
 padding: 20px;
+} */
+.contacts-right-side {
+    width: 570px;
+  
 }
 .footer-container {
 display: flex;
     align-items: baseline;
-    height: 250px;
+    /* height: 250px; */
 }
   .footer-title {
     font-family: Amatic SC cursive;
@@ -452,7 +460,7 @@ display: flex;
         font-style: normal;
 }
 .footer-list {
-    margin-bottom: 12px;
+     margin-bottom: 12px; 
     /* вертикальні відступи */
     font-family: 'Amatic SC';
     font-size: 16px;
@@ -477,7 +485,7 @@ font-family: Amatic SC;
 }
 .ellipse-list {
     display: flex;
-    margin-left: 200px;
+    margin-left: 200px; 
 }
 .ellipse-link {
     display: flex;
