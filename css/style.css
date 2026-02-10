@@ -328,7 +328,7 @@ font-family: Amatic SC;
     white-space: nowrap;
 }
 
-/* КОНТАКТНА ФОРМА    FOOTER   */
+/* КОНТАКТНА ФОРМА  */
 
 .contacts {
 background-color: #07001f;
@@ -344,6 +344,7 @@ background-color: #07001f;
 }
 .contacts-left-side {
     width: 570px;
+    padding: 0 20px;
 }
 .form-wrapper {
    
@@ -379,7 +380,7 @@ background-color: #07001f;
     transform: translateY(0);
 }
 .form-input {
-width: 270px;
+width: 250px;
 padding: 5px;
 outline: transparent;
     background-color: transparent;
@@ -434,55 +435,89 @@ transition: border-color 400ms ease;
 
 
 /* FOOTER */
-/* .footer-socials {
-background-color: rgb(2, 2, 69);
-padding: 20px;
-} */
 .contacts-right-side {
     width: 570px;
-  
 }
-.footer-container {
-display: flex;
-    align-items: baseline;
-    /* height: 250px; */
+.address-wrapper {
+    display: flex;
+        align-items: baseline;
+        padding: 0 150px;
+        /* margin-bottom: 44px; */
 }
-  .footer-title {
-    font-family: Amatic SC cursive;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 1.2;
-        color: #FFFFFF99;
-        display: block;
-       margin-bottom: 20px;
-  }
+ .footer-title {
+     font-family: Amatic SC cursive;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 1.2;
+     color: #FFFFFF99;
+     display: block;
+     margin-bottom: 20px;
+ }
 .address {
-        font-style: normal;
-}
-.footer-list {
-     margin-bottom: 12px; 
-    /* вертикальні відступи */
-    font-family: 'Amatic SC';
+font-family: 'Amatic SC', sans-serif;
+    font-style: normal;
     font-size: 16px;
     line-height: 1.17;
-}
-.footer-list a {
     color: #FFFFFF99;
-    display: inline-block;
 }
-.footer-list a:hover {
-    text-decoration: underline;
+.address-link {
+    color: inherit;
+}
+.address a:hover {
+text-decoration: underline;
+}
+ .contacts-right-list {
+padding: 5px 0;
+}  
+.ellipse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 100px; 
+    flex-shrink: 0;
 }
 .ellipse-title {
-font-family: Amatic SC;
+    font-family: "Amatic SC";
     font-size: 30px;
     font-weight: 400;
-    line-height: 1.2; 
- color: #FFFFFF99;
-    margin-bottom: 20px;
-     margin-left: 200px; 
- 
+    line-height: 1.2;
+    color: #ffffff99;
+    margin: 0;
 }
+.ellipse-list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.ellipse-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #757575;
+    border-radius: 50%;
+}
+.ellipse-link:hover {
+    background-color: hsl(26, 91%, 55%);
+}
+
+.ellipse-icons {
+    fill: #333;
+}
+/* .ellipse-title {
+     font-family: Amatic SC;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFFFFF99;
+    margin-bottom: 20px;
+    margin-left: 150px; 
+} 
+
+
 .ellipse-list {
     display: flex;
     margin-left: 200px; 
@@ -495,7 +530,7 @@ font-family: Amatic SC;
     height: 44px;
     background-color: #757575;
     border-radius: 50%;
-}
+}   
 .ellipse-item {
     margin-right: 10px;
 
@@ -503,8 +538,8 @@ font-family: Amatic SC;
 
 .ellipse-item:last-child {
     margin-right: 0;
-}
-.ellipse-icons {
+} */
+/* .ellipse-icons {
     fill: #333;
 }
  .ellipse-link:hover .socials-icons,
@@ -514,4 +549,4 @@ font-family: Amatic SC;
 .ellipse-link:hover,
 .ellipse-link:focus {
     background: #FFFFFF99;
-}
+} */
