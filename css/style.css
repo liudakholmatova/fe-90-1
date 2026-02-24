@@ -66,7 +66,9 @@ div {
 margin: 0;
     padding: 0;
     min-height: 100vh;
-     background-image: url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"); 
+     background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -153,11 +155,22 @@ transition: 0.3s;
 }
 
 /* СЕКЦІЯ ГЕРОЙ*/
-.hero-container {
-    background-color: rgb(2, 2, 69);
-width: 100%;
-    min-height: 100vh;
+.hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg,
+                #0f0f2d,
+                #1b1b4d,
+                #2d1f4d);
+        color: white;
+/* width: 100%;
+    min-height: 100vh;     */
 }
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .hero-title {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -171,70 +184,83 @@ width: 100%;
     display: flex;
     gap: 20px;
 }
-.about-item {
+/* .about-item {
     flex: 1; 
     display: flex;
     flex-direction: column;
-    /* background-color: #fb6fcf; */
     color: #f8f7f7f9;
     padding: 50px;
     font-family: Amatic SC;
     font-size: 20px;
-box-shadow:
-        0px 8px 16px rgba(255, 105, 180, 0.6),
-        0px 16px 32px rgba(186, 85, 211, 0.45),     
-        0px 24px 48px rgba(138, 43, 226, 0.35);
-} 
+        background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: 0.4s ease;
+}  */
+/* Картки */
+.about-item {
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 22px;
+    line-height: 1.5;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.4s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
 /* СЕКЦІЯ ПОСЛУГИ */
 
 /* ===================== */
-/* Базовий контейнер */
-.services {
+
+ .services {
     padding: 80px 20px;
 background-color: #1a0f4a;
-    /* твій темний фон */
-    color: #f5f5f5;
+    
+     color: #f5f5f5;
     font-family: "Inter", sans-serif;
-}
-
+} 
 .services-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-/* Заголовок секції */
 .services-title {
     font-family: "Amatic SC";
     font-size: 40px;
     font-weight: 400;
     color: #f5f5f5;
-    /* золотистий акцент */
-    text-align: start;
+     text-align: start;
     margin-bottom: 50px;
  padding-left: 30px;
-}
-
-/* Контейнер колонок */
-.column-container {
+} 
+ .column-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
 
-/* Список послуг */
 .services-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: contents;
     /* щоб grid працював через ul > li */
-}
-
-/* Картка послуги */
+ }
 .services-item {
     background-color: rgba(255, 255, 255, 0.05);
-    /* легкий контраст */
-    border-radius: 12px;
+     border-radius: 12px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -245,18 +271,14 @@ background-color: #1a0f4a;
         0px 8px 16px rgba(255, 105, 180, 0.25),
         0px 16px 32px rgba(186, 85, 211, 0.2),
         0px 24px 48px rgba(138, 43, 226, 0.15);
-    /* рожево-фіолетова тінь */
-}
-
-.services-item:hover {
+} 
+ .services-item:hover {
     transform: translateY(-8px);
     box-shadow:
         0px 12px 24px rgba(255, 105, 180, 0.35),
         0px 24px 48px rgba(186, 85, 211, 0.25),
         0px 36px 72px rgba(138, 43, 226, 0.2);
 }
-
-/* Зображення */
 .services-img {
     width: 100%;
     border-radius: 12px;
@@ -264,92 +286,22 @@ background-color: #1a0f4a;
     object-fit: cover;
     height: 180px;
 }
-
-/* Текст послуги */
 .services-text {
     font-size: 16px;
     line-height: 1.6;
     color: #f5f5f5;
 }
-
-/* Назва послуги */
 .service-name {
     font-weight: 700;
     color: #FFFFFF99;
-    /* золотистий акцент */
-}
-/* .services-container {
-    background-color: rgb(2, 2, 69);
-    width: 100%;
-    min-height: 100vh;
-}
-.services-title {
-    position: relative;
-    padding-left: 60px;
-   margin-bottom: 70px;
-font-family: Amatic SC;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #f8f7f7f9;
-} */
-/* .services-title::before {
-    content: '';
-        position: absolute;
-        left: 0;
-            top: 50%;
-            width: 40px;
-            height: 2px;
-         background: #f8f7f7f9;
-        border-radius: 4px; 
-       
-} */
-
-/* .services-list {
-       display: flex;
-       padding-bottom: 50px;
-}
-.services-item {
-    margin-right: 30px;
-    background-color: #f8f7f7f9;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.services-item :last-child {
-    margin-right: 0;
-} */
-/* .services-img {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 100%;
-    max-width: 250px;
-    height: 400px;
-    object-fit: cover;
-     filter: brightness(0.95) contrast(1.05); 
-    border-radius: 8px;
-        transition: 0.4s ease;
-}
-.services-img:hover {
-    transform: scale(1.05);
-        filter: brightness(1.05);
-}
-.services-text {
-    padding: 40px;
-    font-family: Amatic SC;
-        font-size: 16px;
-            line-height: 1.17;
-color: #333;
-} */
-
+ }      
 
 
 /* ЦІНИ */
 
 .prices-container {
 position: relative;
-display: inline-block;
 width: 100%;
-height: 100%;
    background-image: linear-gradient(to top,
         rgba(15, 2, 54, 0.96),
             rgba(176, 88, 38, 0.28)), url(https://media.istockphoto.com/id/518564667/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%83%D0%BA%D0%B0-%D0%B7-%D0%B3%D1%80%D0%B5%D0%B1%D1%96%D0%BD%D1%86%D0%B5%D0%BC-%D1%89%D0%BE-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%B5-%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%81%D1%8F-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8.jpg?s=612x612&w=0&k=20&c=IckOWx_fML2jb8uCIzTcqoLgJMJcJLIVnhUHLEKb924=);
@@ -370,27 +322,28 @@ font-family: Amatic SC;
     display: flex;
     gap: 30px;
 }
+/* Мобільна версія */
+@media (max-width: 768px) {
+    .content-prices {
+        flex-direction: column;
+    }
+}
+
 .prices-column {
     flex: 1;
     margin-bottom: 70px;
 }
 .prices-list-left {
-     background-color: #0f0236;  
-     opacity: 0.5;  
+     background-color: rgba(15, 2, 54, 0.85);  
    padding: 40px; 
    margin-bottom: 50px;
    border-radius: 8px;
-    /* box-shadow: 1px 2px 4px rgba(46, 10, 41, 0.4), 0px 1px 1px rgba(241, 226, 238, 0.4),
-            0px 2px 1px rgba(244, 241, 243, 0.6); */
 }
 .prices-list-right {
-     background-color: #0f0236; 
-       opacity: 0.5;
+     background-color: rgba(15, 2, 54, 0.85); 
         padding: 40px;
         margin-bottom: 50px;
         border-radius: 8px;
-        /* box-shadow: 1px 2px 4px rgba(46, 10, 41, 0.4), 0px 1px 1px rgba(241, 226, 238, 0.4),
-            0px 2px 1px rgba(244, 241, 243, 0.6); */
 }
 .prices-text {
     display: flex;
