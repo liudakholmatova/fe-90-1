@@ -82,7 +82,7 @@ display: flex;
 } 
 
  .logo {
-        font-family: Alex Brush, cursive;
+        font-family: "Alex Brush", cursive;
             font-size: 50px;
             font-weight: 700;
             color: #c0bebef9;
@@ -111,7 +111,7 @@ display: flex;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 .nav-item a {
- font-family: Amatic SC;   
+font-family: "Amatic SC", cursive;
     font-size: 30px;
 font-weight: 400;
 color: #f8f7f7f9;
@@ -122,13 +122,13 @@ transition: 0.3s;
     color: #B05826;
 }
 .btn {
-     font-family: Amatic SC;
+     font-family: "Amatic SC";
         font-size: 30px;
-        padding: 12px 20px;
+        padding: 12px 20px; 
             max-width: 200px;
             min-width: 160px;
             min-height: 40px;
-            margin-bottom: 30px;
+             margin-bottom: 30px; 
 }
 .btn-mode-light {
     padding: 6px 16px;
@@ -175,7 +175,7 @@ transition: 0.3s;
     padding-top: 70px;
     padding-bottom: 70px;
     text-align: center;
-    font-family: Alex Brush, cursive;
+    font-family: "Alex Brush", cursive;
     font-size: 50px;
     font-weight: 700;
     color: #c0bebef9;
@@ -184,19 +184,7 @@ transition: 0.3s;
     display: flex;
     gap: 20px;
 }
-/* .about-item {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    color: #f8f7f7f9;
-    padding: 50px;
-    font-family: Amatic SC;
-    font-size: 20px;
-        background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: 0.4s ease;
-}  */
+
 /* Картки */
 .about-item {
     padding: 30px;
@@ -315,7 +303,7 @@ width: 100%;
     margin-top: 50px;
  margin-left: 30px;
  margin-bottom: 30px;
-font-family: Amatic SC;
+font-family: "Amatic SC", cursive;
     font-size: 20px;
 }
 .content-prices {
@@ -348,7 +336,7 @@ font-family: Amatic SC;
 .prices-text {
     display: flex;
     align-items: center;
-    font-family: Amatic SC;
+font-family: "Amatic SC", cursive;
         font-size: 20px;
      margin: 20px 0; 
     color: #ffffffcc;
@@ -487,7 +475,7 @@ transition: border-color 400ms ease;
         /* margin-bottom: 44px; */
 }
  .footer-title {
-     font-family: Amatic SC cursive;
+    font-family: "Amatic SC", cursive;
      font-size: 30px;
      font-weight: 400;
      line-height: 1.2;
