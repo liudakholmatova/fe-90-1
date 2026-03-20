@@ -272,7 +272,7 @@ background-color: #1a0f4a;
     border-radius: 12px;
     margin-bottom: 20px;
     object-fit: cover;
-    height: 180px;
+    height: 280px;
 }
 .services-text {
     font-size: 16px;
@@ -464,7 +464,7 @@ transition: border-color 400ms ease;
 
 
 
-/* FOOTER */
+/* соціальні мережі */
 .contacts-right-side {
     width: 570px;
 }
