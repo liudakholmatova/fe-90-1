@@ -206,25 +206,181 @@ transition: 0.3s;
     background: rgba(255, 255, 255, 0.15);
 }
 
+/* ===СЕКЦІЯ ПОСЛУГИ===== */
+.services {
+    padding: 80px 20px;
+        background: #c0bebef9;      
+        color: #333;
+}
+.services-description {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #B05826;
+
+    position: relative;
+}
+.services-description::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #B05826;
+    margin: 20px auto 0;
+}
+@media (max-width: 480px) {
+    .services-description {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+/* ================= */
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+@media (min-width: 768px) {
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+
+.services-item {
+    background-color: #0f0a2a;
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 2px solid transparent;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+.services-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.services-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.services-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.services-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.services-item::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            rgba(176, 88, 38, 0.3),
+            rgba(255, 255, 255, 0.1),
+            rgba(176, 88, 38, 0.3));
+    transform: rotate(0deg);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+}
+@media (min-width: 1200px) {
+    .services-item:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        border: 2px solid #B05826;
+    }
+
+    .services-item:hover::before {
+        opacity: 1;
+        animation: rotateGradient 4s linear infinite;
+    }
+
+    .services-item:hover .service-title {
+        color: #B05826;
+    }
+}
+
+/* рух градієнта */
+@keyframes rotateGradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.service-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    transition: color 0.3s;
+    color: #fff;
+}
+
+.service-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ffffffcc;
+    margin-bottom: 15px;
+}
+
+.service-price {
+    font-weight: 600;
+    color: #B05826;
+}
 
 
 
-/* СЕКЦІЯ ПОСЛУГИ */
 
+
+
+
+
+
+
+
+
+
+/* СЕКЦІЯ ПОРТФОЛІО */
 /* ===================== */
 
- .services {
+ .portfolio {
     padding: 80px 20px;
 background-color: #1a0f4a;
     
      color: #f5f5f5;
     font-family: "Inter", sans-serif;
 } 
-.services-container {
+.portfolio-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.services-title {
+.portfolio-title {
     font-family: "Amatic SC";
     font-size: 40px;
     font-weight: 400;
@@ -239,14 +395,14 @@ background-color: #1a0f4a;
     gap: 30px;
 }
 
-.services-list {
+.portfolio-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: contents;
     /* щоб grid працював через ul > li */
  }
-.services-item {
+.portfolio-item {
     background-color: rgba(255, 255, 255, 0.05);
      border-radius: 12px;
     padding: 20px;
@@ -260,26 +416,26 @@ background-color: #1a0f4a;
         0px 16px 32px rgba(186, 85, 211, 0.2),
         0px 24px 48px rgba(138, 43, 226, 0.15);
 } 
- .services-item:hover {
+ .portfolio-item:hover {
     transform: translateY(-8px);
     box-shadow:
         0px 12px 24px rgba(255, 105, 180, 0.35),
         0px 24px 48px rgba(186, 85, 211, 0.25),
         0px 36px 72px rgba(138, 43, 226, 0.2);
 }
-.services-img {
+.portfolio-img {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 20px;
     object-fit: cover;
     height: 280px;
 }
-.services-text {
+.portfolio-text {
     font-size: 16px;
     line-height: 1.6;
     color: #f5f5f5;
 }
-.service-name {
+.portfolio-name {
     font-weight: 700;
     color: #FFFFFF99;
  }      
