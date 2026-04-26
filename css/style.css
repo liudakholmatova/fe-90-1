@@ -1,38 +1,36 @@
- /* @import url(./components.css); */
-* {
-    outline: 1px solid red;
-}
-* {
+  @import url(./components.css); 
+  @import url(./reset.css);
+
+/* * {
     box-sizing: border-box;
 }
  :root {
     --main-font: Roboto, sans-serif;
         --secondary-font: Raleway, sans-serif;
 /*text color*/
-    --accent-cl: #555555;
+    /* --accent-cl: #555555;
     --main-txt-cl: #1E1E1E;
     --secondary-txt-cl: ;
         /*bacground colors*/
-            --accent-cl: #FF6C00;
+            /* --accent-cl: #FF6C00; 
             --main-bg-cl: #F5F4FA;
             --secondary-bg-cl: #191c26;
-} 
+}   */
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: Roboto, sans-serif;
         font-size: 18px;
-       
         color: #fff;
 }
- /* @media (max-width:767.98px) {
+  @media (max-width:767.98px) {
      body {
          font-size: 16px;
      }
- } */
+ } 
 
-p,
+/* p,
 h1,
 h2,
 h3, 
@@ -54,19 +52,19 @@ a {
 }
 ul {
     list-style-type: none;
-}
-.container {
+} */
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
- /* [class*="container"] {
+} */
+   [class*="container"] {
      max-inline-size: 1310px;
      margin-inline: auto;
      padding-inline: 15px;
- } */
+ }  
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -90,14 +88,16 @@ margin: 0;
 display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: flex-start;
 } 
  .logo {
+    
     font-family: "Alex Brush";
     font-size: 72px;
         font-weight: 800;
         line-height: 1.1;
         color: #ffffffcc;
-        text-wrap: balance;
+         text-wrap: balance; 
 } 
 .nav {
     flex: 1;
@@ -202,7 +202,6 @@ min-height: 100%;
 }
 }
 
-/* Картки */
 .about-item {
     padding: 30px;
     border-radius: 20px;
@@ -220,11 +219,6 @@ background: rgba(255, 255, 255, 0.15);
     transition: 0.4s ease;
 }
 
-
-
-
-
-
 /* ===СЕКЦІЯ ПОСЛУГИ===== */
 .services {
     padding: 80px 20px;
@@ -238,7 +232,7 @@ background: rgba(255, 255, 255, 0.15);
 
     font-size: 18px;
     line-height: 1.7;
-    color: #B05826;
+    color: hwb(22 15% 31%);
 
     position: relative;
 }
@@ -250,9 +244,6 @@ background: rgba(255, 255, 255, 0.15);
     background-color: #B05826;
     margin: 20px auto 0;
 }
-/* .btn-mode-light-service {
-   margin-top: 50px;
-} */
 @media (max-width: 480px) {
     .services-description {
         font-size: 14px;
@@ -333,7 +324,7 @@ background: rgba(255, 255, 255, 0.15);
     .services-item:hover {
         transform: translateY(-10px) scale(1.03);
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-        border: 2px solid #B05826;
+        border: 2px solid hwb(22 15% 31%);
     }
 
     .services-item:hover::before {
@@ -373,23 +364,11 @@ background: rgba(255, 255, 255, 0.15);
 
 .service-price {
     font-weight: 600;
-    color: #B05826;
+    color: hwb(22 15% 31%);
 }
 .services-cta {
   margin-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* СЕКЦІЯ ПОРТФОЛІО */
 
@@ -417,7 +396,6 @@ background-color: #0f172a;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
 }
-
 .portfolio-list {
     list-style: none;
     padding: 0;
@@ -542,10 +520,19 @@ font-family: "Amatic SC", cursive;
 .contacts {
 background-color: #07001f;
 }
+
+
 .contacts-container {
     display: flex;
     align-items: baseline;
 }
+@media (max-width:1140.98px) {
+    .contacts-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
 .contacts-form {
     display: flex;
     flex-direction: column;
@@ -653,6 +640,13 @@ transition: border-color 400ms ease;
         padding: 0 150px;
         /* margin-bottom: 44px; */
 }
+ @media (max-width:1140.98px) {
+    .address-wrapper {
+        padding: 0 20px;
+    }
+ }
+
+
  .footer-title {
     font-family: "Amatic SC", cursive;
      font-size: 30px;
