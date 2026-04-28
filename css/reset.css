@@ -1,21 +1,22 @@
 *,
-*::after,
+ *::after,
 *::before {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}
+     padding: 0; 
+     margin: 0; 
+    border: 0; 
+     box-sizing: border-box; 
+}  
 
-*::after,
+
+ *::after,
 *::before {
     display: inline-block;
-}
+} 
 
 a {
     display: inline-block;
     text-decoration: none;
-    color: inherit;
+     color: inherit; 
 }
 
 img {
@@ -45,6 +46,6 @@ html,
 body {
     block-size: 100%;
 }
-/* * {
+ /* * {
     outline: 1px solid red;
-} */
+}  */
