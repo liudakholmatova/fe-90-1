@@ -292,6 +292,9 @@
         </div>
       </section>
     </main>
+
+    <!-- СЕКЦІЯ ФУТЕР -->
+
     <footer>
       <!-- КОНТАКТИ -->
       <section class="contacts section" id="contact">
@@ -299,33 +302,41 @@
           <!-- КОНТАКТНА ФОРМА -->
           <div class="contacts-left-side">
             <h2 class="footer-title">Онлайн бронювання</h2>
-            <form class="contacts-form" name="contacts-form">
+            <form
+              class="contacts-form"
+              name="contacts-form"
+              action="///"
+              method="post"
+            >
               <div class="form-wrapper">
                 <label class="form-group">
                   <input
                     class="form-input"
                     type="text"
                     id="user-name"
-                    name="user-name"
+                    name="name"
                     placeholder="Олександра"
+                    required
                   />
-                  <span class="form-label">ім'я*</span>
+                  <span class="form-label">Ім'я*</span>
                 </label>
                 <label class="form-group">
                   <input
                     class="form-input"
-                    type="text"
+                    type="tel"
                     id="user-phone"
-                    name="user-phone"
+                    name="phone"
                     placeholder="+38 097 123 45 67"
+                    required
                   />
-                  <span class="form-label">телефон*</span>
+                  <span class="form-label">Телефон*</span>
                 </label>
               </div>
               <label class="form-message-group">
                 <textarea
                   class="form-message"
-                  name="user-message"
+                  id="user-message"
+                  name="message"
                   rows="5"
                   placeholder="Ваше замовлення..."
                 ></textarea>
@@ -342,11 +353,15 @@
           <div class="contacts-right-side">
             <div class="address-wrapper">
               <div>
-                <a class="footer-title" href="/">Контакти</a>
+                <h2 class="footer-title">Контакти</h2>
                 <address class="address">
                   <ul>
                     <li class="contacts-right-list">
-                      <a class="address-link" href="" target="_blank"
+                      <a
+                        class="address-link"
+                        href="https://www.google.com/maps/search/?api=1&query=Верховина,+Грушевського,+5"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         >м Верховина вул. Грушевського д.5 кв.1</a
                       >
                     </li>
