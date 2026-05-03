@@ -98,13 +98,14 @@ ul {
 }
 
 /* ХЕДЕР */ 
-.header {
+ .header {
 margin: 0;
     padding: 0;
     min-height: 100vh;
      background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"); 
+            rgba(0, 0, 0, 0.6)),
+             url("https://images.pexels.com/photos/1081685/pexels-photo-1081685.jpeg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,8 +162,8 @@ display: flex;
 .nav-list a:hover,
 .nav-list a:focus {
     color: hwb(22 15% 31%);
-}
-.btn {
+} 
+ .btn {
      font-family: "Amatic SC";
         font-size: 30px;
         padding: 12px 20px; 
@@ -189,68 +190,121 @@ display: flex;
     background: #ffffffee;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
     transform: translateY(-2px);
-}
+} 
 /* active */
-.btn-mode-light:active {
+ .btn-mode-light:active {
     transform: translateY(0);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-}
+} 
+
+
+
+
 
 /* СЕКЦІЯ ГЕРОЙ*/
 .hero {
-min-height: 100vh;
+    min-height: 100vh;
     display: flex;
-text-align: center;
-    background-color: #0f172a;
-            backdrop-filter: blur(10px);
-        color: #fff;
+    align-items: center;
+    color: #fff;
+    background:
+        linear-gradient(135deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(41, 24, 37, 0.92));
+}
+
+.hero-container {
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+}
+
+.hero-eyebrow {
+    margin-bottom: 18px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .hero-title {
-font-family: "Alex Brush";
-    font-size: 72px;
-    font-weight: 800;
-    line-height: 1.1;
-    color: #ffffffcc;
-    /* text-wrap: balance; */
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-@media (max-width:991.98px) {
-.hero-title {
-    margin-top: 80px;
-        margin-bottom: 80px;
-}
-}
-.about-list {
-    display: flex;
-    gap: 20px;
+    margin-bottom: 72px;
+    color: rgba(255, 255, 255, 0.88);
+    font-family: "Alex Brush", cursive;
+    font-size: 88px;
+    font-weight: 400;
+    line-height: 1;
+    text-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
 }
 
-@media (max-width:991.98px) {
 .about-list {
-    flex-direction: column;
-min-height: 100%;
-    overflow: clip;
-}
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
 }
 
 .about-item {
-    padding: 30px;
-    border-radius: 20px;
-    color: #fff;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.05px;
-        transition: color 0.3s;
-background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: 0.4s ease;
+    min-height: 230px;
+    padding: 28px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(14px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.about-item:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 991.98px) {
+    .hero-container {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .hero-title {
+        margin-bottom: 56px;
+        font-size: 72px;
+    }
+
+    .about-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-item {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-eyebrow {
+        font-size: 12px;
+    }
+
+    .about-item {
+        padding: 22px 18px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
 
 /* ===СЕКЦІЯ ПОСЛУГИ===== */
 .services {
@@ -480,196 +534,110 @@ background-color: #0f172a;
 
 
 /* ЦІНИ */
+.prices {
+    min-height: 100vh;
+    background-image: linear-gradient(to top,
+            rgba(15, 2, 54, 0.96),
+            rgba(176, 88, 38, 0.28)),
+        url("https://media.istockphoto.com/id/518564667/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%83%D0%BA%D0%B0-%D0%B7-%D0%B3%D1%80%D0%B5%D0%B1%D1%96%D0%BD%D1%86%D0%B5%D0%BC-%D1%89%D0%BE-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%B5-%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%81%D1%8F-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8.jpg?s=612x612&w=0&k=20&c=IckOWx_fML2jb8uCIzTcqoLgJMJcJLIVnhUHLEKb924=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .prices-container {
-position: relative;
-width: 100%;
-margin: 0;
-padding: 0;
-   background-image: linear-gradient(to top,
-        rgba(15, 2, 54, 0.96),
-            rgba(176, 88, 38, 0.28)), url(https://media.istockphoto.com/id/518564667/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%80%D1%83%D0%BA%D0%B0-%D0%B7-%D0%B3%D1%80%D0%B5%D0%B1%D1%96%D0%BD%D1%86%D0%B5%D0%BC-%D1%89%D0%BE-%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%B5-%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%81%D1%8F-%D0%B6%D1%96%D0%BD%D0%BA%D0%B8.jpg?s=612x612&w=0&k=20&c=IckOWx_fML2jb8uCIzTcqoLgJMJcJLIVnhUHLEKb924=);
-    background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .prices-strong {
-    display: inline-block;
-     color: #ffffffcc; 
-    margin-top: 50px;
- margin-left: 20px;
- margin-bottom: 30px;
-  font-family: inherit; 
- /* font-family: "Amatic SC";  */
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
+
+.prices-strong::before {
+    content: "";
+    width: 56px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
 .content-prices {
     display: flex;
     gap: 30px;
 }
-/* Мобільна версія */
-@media (max-width: 768px) {
-    .content-prices {
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
 .prices-column {
     flex: 1;
-     margin: 70px 20px; 
 }
- @media (max-width: 768px) {
-.prices-column {
-    margin: 20px;
-   
-}
-} 
-.prices-list-left {
-     background-color: rgba(15, 2, 54, 0.85);  
-   padding: 40px; 
-   border-radius: 8px;
-}
+.prices-list-left,
 .prices-list-right {
-     background-color: rgba(15, 2, 54, 0.85); 
-        padding: 40px;
-        margin-bottom: 50px;
-        border-radius: 8px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: rgba(15, 2, 54, 0.85);
 }
 .prices-text {
     display: flex;
     align-items: center;
-font-family: inherit;
-        font-size: 20px;
-     margin: 20px 0; 
+    margin: 20px 0;
     color: #ffffffcc;
+    font-family: inherit;
+    font-size: 20px;
 }
 .prices-left-span {
     display: flex;
-   
-         align-items: center; 
-        flex: 1;
-                position: relative;
-}
-.prices-left-span::after {
-     content: "";
-        flex: 1;
-        border-bottom: 1px dotted #ffffffcc;
-            margin: 0 20px;
-}
-.prices-span {
-    white-space: nowrap;
-}
-
-
-/* ===================================== */
-              /* ЦІНИ 2 */
-/* ===================================== */
-.prices-bg {
-    min-height: 100vh;
-    padding: 80px 20px;
-    background: #c0bebef9;
-        color: #333;
-}
-.prices-content {
-  
-    display: flex;
-    gap: 40px;
-}
-.prices-strong {
-    color: #333;
-}
-.prices-list {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Один рядок */
-.prices-item {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-/* Назва */
-.prices-item dt {
     flex: 1;
-    position: relative;
-    display: flex;
-        align-items: center;
 }
 
-/* Лінія між текстом і ціною */
-.prices-item dt::after {
+.prices-left-span::after {
     content: "";
     height: 1px;
-background: linear-gradient(to right,
-            rgba(51, 51, 51, 0.2),
-            rgba(51, 51, 51, 0.8));
-
     flex: 1;
-    margin-left: 15px;
-
+    margin: 0 20px;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.8));
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
 }
-.prices-item:hover dt::after {
+
+.prices-item:hover .prices-left-span::after {
     transform: scaleX(1);
 }
-.prices-item:hover dt::after {
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-}
 
-/* Ціна */
-.prices-item dd {
-    margin: 0;
+
+.prices-span {
     white-space: nowrap;
 }
 @media (max-width: 768px) {
-
-    /* Кожен рядок → колонка */
-    .prices-item {
+    .content-prices {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        gap: 20px;
     }
 
-    /* Забираємо лінію */
-    .prices-item dt::after {
-        display: none;
+    .prices-list-left,
+    .prices-list-right {
+        padding: 24px;
     }
 
-    /* Ціна під назвою */
-    .prices-item dd {
+    .prices-text {
         font-size: 16px;
-        opacity: 0.8;
+    }
+
+    .prices-left-span::after {
+        margin: 0 10px;
     }
 }
-@media (max-width: 768px) {
-    .prices-list {
-        gap: 25px;
-    }
-
-    .prices-item dt {
-        font-size: 18px;
-    }
-}
-@media (max-width: 480px) {
-    .prices-bg {
-        padding: 50px 0;
-    }
-
-    .prices-title {
-        font-size: 28px;
-    }
-}
-
-
-
-/* ======================================= */
 
 /* КОНТАКТНА ФОРМА  */
 .contacts {

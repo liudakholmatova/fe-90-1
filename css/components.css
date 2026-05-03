@@ -259,3 +259,123 @@
 .ellipse-icons {
     fill: #333;
 }
+/* ===================================== */
+/* ЦІНИ 2 */
+/* ===================================== */
+.prices-bg {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background: #c0bebef9;
+    color: #333;
+}
+
+.prices-content {
+
+    display: flex;
+    gap: 40px;
+}
+
+.prices-strong {
+    color: #333;
+}
+
+.prices-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Один рядок */
+.prices-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Назва */
+.prices-item dt {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Лінія між текстом і ціною */
+.prices-item dt::after {
+    content: "";
+    height: 1px;
+    background: linear-gradient(to right,
+            rgba(51, 51, 51, 0.2),
+            rgba(51, 51, 51, 0.8));
+
+    flex: 1;
+    margin-left: 15px;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.prices-item:hover dt::after {
+    transform: scaleX(1);
+}
+
+.prices-item:hover dt::after {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+/* Ціна */
+.prices-item dd {
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+    /* Кожен рядок → колонка */
+    .prices-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Забираємо лінію */
+    .prices-item dt::after {
+        display: none;
+    }
+
+    /* Ціна під назвою */
+    .prices-item dd {
+        font-size: 16px;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    .prices-list {
+        gap: 25px;
+    }
+
+    .prices-item dt {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prices-bg {
+        padding: 50px 0;
+    }
+
+    .prices-title {
+        font-size: 28px;
+    }
+}
+
+
+/* ==========кольори=========== */
+rgba(15, 23, 42, ...)
+ rgba(41, 24, 37, ...)
+ #d7a574
+ rgba(255, 255, 255, 0.82)
